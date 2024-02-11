@@ -1,13 +1,13 @@
 # :robot: Robocopy Backup Script
 
-Use Window's `robocopy` command to sync your files to the destination of your choice (e.g. OneDrive, Dropbox, etc.)
+Use Windows' `robocopy` command to sync your files to the destination of your choice (e.g. OneDrive, Dropbox, etc.)
 
 ## How it works
 
 The underlying mechanism is the command, `robocopy`:
 
 ```powershell
-robocopy "Source" "Destination" /log+:"Log" /tee /mir /z /j /mt:4
+robocopy "Source" "Destination" /log+:"Log" /tee /mir /z /j /mt:2
 ```
 
 |||
@@ -19,7 +19,7 @@ robocopy "Source" "Destination" /log+:"Log" /tee /mir /z /j /mt:4
 |`/mir`|Option to mirror the source directory tree.|
 |`/z`|Option to copy files in restartable mode. In restartable mode, should a file copy be interrupted, robocopy can pick up where it left off rather than recopying the entire file.|
 |`/j`|Option to Copy using unbuffered I/O.|
-|`/mt:4`|Option to Create multi-threaded copies with 4 threads.|
+|`/mt:2`|Option to Create multi-threaded copies with 2 threads.|
 
 ## Setup
 
