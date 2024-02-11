@@ -33,7 +33,7 @@ robocopy "Source" "Destination" /log+:"Log" /tee /mir /z /j /mt:2
 
 3. Save your changes
 
-4. Right-click on the file you just edited `robocopy.ps1` and select `Run with Powershell` to start backing up your files. To make it easier to run in the future, consider making a shortcut to the script as outlined in this guide: <https://www.tenforums.com/tutorials/97162-powershell-scripting-run-script-shortcut.html>
+4. Right-click on the file you just edited ,`robocopy.ps1`, and select `Run with Powershell` to start backing up your files. To make it easier to run in the future, consider making a shortcut to the script as outlined in this guide: <https://www.tenforums.com/tutorials/97162-powershell-scripting-run-script-shortcut.html>
 
 
 ## Reference
