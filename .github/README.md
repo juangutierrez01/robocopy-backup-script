@@ -1,4 +1,6 @@
-# :robot: Robocopy Backup Script
+<h1 align="center">
+:robot: Robocopy Backup Script
+</h1>
 
 Use Windows' `robocopy` command to sync your files to the destination of your choice (e.g. OneDrive, Dropbox, etc.)
 
