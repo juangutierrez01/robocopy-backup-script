@@ -5,11 +5,12 @@ foreach ($Backup in $Settings.Backups)
 {
     try
     {
-	robocopy "$($Backup.Source)" "$($Backup.Destination)" /log+:"$LogFile" /tee /mir /z /j /mt:1
+        Write-Host $('Backing up "{0}":' -f $Backup.Name)
+        robocopy "$($Backup.Source)" "$($Backup.Destination)" /log+:"$LogFile" /tee /mir /z /j /mt:1
     }
     catch
     {
-	Write-Host $('An error occured while trying to backup "{0}":' -f $Backup.Name)
-	Write-Host $_
+        Write-Host $('An error occured while trying to backup "{0}":' -f $Backup.Name)
+        Write-Host $_
     }
 }
