@@ -1,12 +1,17 @@
-[
-  {
-    "Name": "Example Backup 1",
-    "Source": "Source1",
-    "Destination": "Destination1"
-  },
-  {
-    "Name": "Example Backup 2",
-    "Source": "Source2",
-    "Destination": "Destination2"
-  }
-]
+{
+    "Backups":
+	[
+	    {
+		"Name": "Example Backup 1",
+		"Source": "Source1",
+		"Destination": "Destination1"
+	    },
+	    {
+		"Name": "Example Backup 2",
+		"Source": "Source2",
+		"Destination": "Destination2"
+	    }
+	],
+
+    "LogDirectory": ".\\"
+}
