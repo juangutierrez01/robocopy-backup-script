@@ -22,7 +22,7 @@ Use Windows' `robocopy` command to sync your files to the destination of your ch
                 "Name": "Example Backup",
                 "Source": "C:\\Users\\YOUR_USER\\Documents\\ORIGINAL_FOLDER",
                 "Destination": "C:\\Users\\YOUR_USER\\OneDrive\\BACKUP_FOLDER"
-            },
+            }
         ],
 
         "LogDirectory": ".\\"
