@@ -6,7 +6,7 @@ foreach ($Backup in $Settings.Backups)
     try
     {
         Write-Host $('Backing up "{0}":' -f $Backup.Name)
-        robocopy "$($Backup.Source)" "$($Backup.Destination)" /log+:"$LogFile" /tee /mir /zb /j /mt:1
+        robocopy `"$($Backup.Source)`" `"$($Backup.Destination)`" /xd `"$($Backup.Exclusions -join '" "')`" /log+:`"$LogFile`" /tee /mir /zb /j /mt:1
     }
     catch
     {

@@ -4,7 +4,12 @@
         {
             "Name": "Example Backup 1",
             "Source": "Source1",
-            "Destination": "Destination1"
+            "Destination": "Destination1",
+            "Exclusions":
+            [
+                "ExcludeThisDirectory",
+                "AlsoExcludeThisDirectory"
+            ]
         },
         {
             "Name": "Example Backup 2",
