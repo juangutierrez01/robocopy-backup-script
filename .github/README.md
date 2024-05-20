@@ -38,7 +38,7 @@ Use Windows' `robocopy` command to sync your files to the destination of your ch
 The underlying mechanism is the command, `robocopy`:
 
 ```powershell
-robocopy "Source" "Destination" /log+:"LogFile" /tee /mir /z /j /mt:2
+robocopy "Source" "Destination" /log+:"LogFile" /tee /mir /zb /j /mt:1
 ```
 
 |||
@@ -48,9 +48,9 @@ robocopy "Source" "Destination" /log+:"LogFile" /tee /mir /z /j /mt:2
 |`"LogFile"`|The file to store the status output of robocopy.|
 |`/tee`|Option to display the status output to the console window and store it in the log file.|
 |`/mir`|Option to mirror the source directory tree.|
-|`/z`|Option to copy files in restartable mode. In restartable mode, should a file copy be interrupted, robocopy can pick up where it left off rather than recopying the entire file.|
+|`/zb`|Option to copy files in restartable mode and backup mode. In restartable mode, should a file copy be interrupted, robocopy can pick up where it left off rather than recopying the entire file. In backup mode, if file access is denied, robocopy overrides file/folder permission settings.|
 |`/j`|Option to copy files using unbuffered I/O.|
-|`/mt:2`|Option to create multi-threaded copies with 1 thread.|
+|`/mt:1`|Option to create multi-threaded copies with 1 thread.|
 
 ## Reference
 
